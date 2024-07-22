@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ORDER-NOW</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><img src="logo.png" alt="Logo" class="logo_img"><a href="logo.png" id="name">BREW
+                    HAVEN</a></div>
+            <ul class="links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">ITEM MENU</a></li>
+                <li><a href="contactus.html">ORDER NOW</a></li>
+            </ul>
+        </div>
+        <form id="buyNowForm" class="checkout-form">
+            <h2>Checkout</h2>
+            <div class="product-selection">
+                <h3>Select Your Product</h3>
+                <select id="product-select">
+                    <option value="product1">Espresso - ₹100</option>
+                    <option value="product2">Latte - ₹120</option>
+                    <option value="product3">Cappuccino - ₹140</option>
+                    <option value="product1">Americano - ₹110</option>
+                    <option value="product2">Mocha - ₹150</option>
+                    <option value="product3">Blueberry Muffin - ₹80</option>
+                    <option value="product1">Chocolate Croissant - ₹120</option>
+                    <option value="product2">Cheese Danish - ₹90</option>
+                    <option value="product3">Almond Biscotti - ₹70</option>
+                    <option value="product1">Lemon Tart - ₹100</option>
+                    <option value="product2">Carrot Cake - ₹130</option>
+                    <option value="product3">Red Velvet Cupcake - ₹90</option>
+                </select>
+                <label for="special instruction">Special Instruction:</label><br>
+                <textarea id="Special-Instruction" name="address"></textarea>
+            </div>
+            <div class="customer-info">
+                <h3>Customer Information</h3>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            <div class="payment">
+                <h3>Payment</h3>
+            </div>
+            <button type="submit" id="button">Place Order</button>
+        </form>
+    </header>
+</body>
+
+</html>
